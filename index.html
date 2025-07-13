@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defects Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?technology,software') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1, .hero p {
+    position: relative;
+    z-index: 1;
+}
+
+/* Features Section */
+.features .icon {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.features .icon:hover {
+    transform: scale(1.1);
+}
+
+.features h4 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Call to Action */
+.cta {
+    background: #007bff;
+    color: white;
+}
+
+.cta .btn {
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Defects Tracker</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="http://127.0.0.1:5501/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5501/public/features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5501/contact.html">Contact</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+     <br><br>
+     <center>
+        <h1>Track & Fix Bugs Efficiently</h1>
+        <p>A smart way to manage software defects and improve productivity.</p>
+        <a href="http://localhost:3003/report.html" class="btn btn-primary btn-lg">Report a Defect</a>
+        <a href="login.html" class="btn btn-success btn-lg">Login</a>
+        </center>
+
+    <!-- Features Section -->
+    <section class="features py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Why Use Our Defects Tracker?</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="bi bi-check-circle-fill icon"></i>
+                    <h4>Easy Reporting</h4>
+                    <p>Quickly log defects with detailed information.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-bar-chart-fill icon"></i>
+                    <h4>Data Insights</h4>
+                    <p>Analyze trends and prioritize defect fixes.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-shield-lock-fill icon"></i>
+                    <h4>Secure & Reliable</h4>
+                    <p>All your data is securely stored and managed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta text-center py-5">
+        <div class="container">
+            <h2>Start Tracking Defects Today!</h2>
+            <p class="lead">Join thousands of developers in improving software quality.</p>
+            <a href="#" class="btn btn-success btn-lg">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Defects Tracker | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
